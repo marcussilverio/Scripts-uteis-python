@@ -1,6 +1,6 @@
 import pytube
 import os
-url = input("Enter video url: ")
+url = input("Enter url video: ")
 path = 'D:\Musicas'
 yt = pytube.YouTube(url)
 out_file = yt.streams.get_audio_only().download(path)
